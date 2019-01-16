@@ -5,14 +5,14 @@
 			<Page title="{i18n>title}">
 				<content>
 					<VBox>
-						<Text text="Open your browsers console to see the results." />
+						<Text text="Open your browsers console to see the results." class="red"/>
 						<Button text="Example 1 (2 sec)" press="handleExample1"/>
 						<Button text="Example 2 (2 sec)" press="handleExample2"/>
 						<Button text="Example 3 (4 sec)" press="handleExample3"/>
 						<Button text="Example 4 (4 sec)" press="handleExample4"/>
 						<Button text="Example 5 (notif)" press="handleExample5"/>
 						<Button text="Example 6 (call)" press="handleExample6"/>
-						<Button text="Example 7 (2 sec)" press="handleExample7"/>
+						<Button text="Example 7 (2 sec) + BusyInd" press="handleExample7"/>
 						<Button text="Example 8 (2 sec)" press="handleExample8"/>
 						<Button text="Extra 1 (2 sec)" press="handleExtra1"/>
 						<Button text="Extra 2 (2 + 2 sec)" press="handleExtra2"/>

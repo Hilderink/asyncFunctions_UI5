@@ -68,14 +68,16 @@ sap.ui.define([
 			console.log(d.data); //Last text in console
 		}, 
 		handleExample7: async function () {
+			sap.ui.core.BusyIndicator.show(0);
 			try{
 			    var data = await this.resolveAfter2Seconds('Example 7');
-			    console.log(data); //returns Example 7 after 2 seconds
+				console.log(data); //returns Example 7 after 2 seconds
 			}
 			catch(err) 
 			{
 			    console.error('Error: ', error)    
 			}
+			sap.ui.core.BusyIndicator.hide();
 		}, 
 		handleExample8: function () {
 			this.resolveAfter2Seconds('Example 8').
